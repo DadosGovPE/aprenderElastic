@@ -3,8 +3,10 @@
 Esse repositório guarda aprendizados em explorações do Elasticsearch:
 
 - [Mapping: definidor da natureza das variáveis](https://github.com/DadosGovPE/aprenderElastic?tab=readme-ov-file#mapping-definidor-da-natureza-das-vari%C3%A1veis)
-- [Ingestão de dados aninhados](https://github.com/DadosGovPE/aprenderElastic?tab=readme-ov-file#mapping-definidor-da-natureza-das-vari%C3%A1veis)
-
+- [Ingestão de dados aninhados](https://github.com/DadosGovPE/aprenderElastic#ingest%C3%A3o-de-dados-aninhados)
+- [Cuidados com dados geoespaciais](https://github.com/DadosGovPE/aprenderElastic#cuidados-com-dados-geoespaciais)
+- [Campos ausentes em alguns documentos](https://github.com/DadosGovPE/aprenderElastic#campos-ausentes-em-alguns-documentos)
+- [Relatos do processo de implantação do Elastic](https://github.com/DadosGovPE/aprenderElastic#relatos-do-processo-de-implanta%C3%A7%C3%A3o-do-elastic)
 
 ## Mapping: definidor da natureza das variáveis
 
