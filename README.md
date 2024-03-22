@@ -7,6 +7,7 @@ Esse repositório guarda aprendizados em explorações do Elasticsearch:
 - [Cuidados com dados geoespaciais](https://github.com/DadosGovPE/aprenderElastic#cuidados-com-dados-geoespaciais)
 - [Campos ausentes em alguns documentos](https://github.com/DadosGovPE/aprenderElastic#campos-ausentes-em-alguns-documentos)
 - [Relatos do processo de implantação do Elastic](https://github.com/DadosGovPE/aprenderElastic#relatos-do-processo-de-implanta%C3%A7%C3%A3o-do-elastic)
+- [Buscas páginadas (scroll search)](https://github.com/DadosGovPE/aprenderElastic#buscas-p%C3%A1ginadas-scroll-search)
 
 ## Mapping: definidor da natureza das variáveis
 
