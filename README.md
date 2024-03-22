@@ -209,6 +209,11 @@ Todavia há um curioso fenômeno quando se constrói um **index pattern** com **
 
 Por exemplo: dado um index com 100 documentos, 10 deles sem timestamp. Ao observar tal index no Discover só poderemos observar 90 documentos. Mesmo que seja realizada na ferramenta uma busca por documentos onde o campo não existe, tais documentos não serão exibidos.
 
+## Buscas páginadas (scroll search)
+A função de busca do elastic retorna um quantidade limitada de resultados. Esse valor pode ser aumentado com configurações de cada index (parâmetro `index.max_result_window`). Uma alternativa é pagina a busca. A função scroll faz isso simulando uma busca com scroll ao longo do index. Para realiza-la é preciso fazer uma busca inicial usando o argumento de tempo de scroll. Essa busca gera uma ID de scroll. Com tal ID é possível realizar uma busca paginada através da função. A função [buscaPaginada](https://gist.github.com/IcaroBernardes/7028371f13f73737e6ae83bd19fffc61) em R automatiza esse processo.
+
+Atenção, a função não é recomendada para páginações muito longas (acima de 10 000 resultados). Recomenda-se usar a função search_after. Todavia para o R ela ainda não está implementada.
+
 ## Relatos do processo de implantação do Elastic
 Na medida que a máquina com o Elastic foi implantada e operada por nós, surgiram alguns problemas:
 - Pouca **memória alocada** para o docker do elasticsearch. Resolvido com maior alocação;
